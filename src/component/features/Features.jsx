@@ -6,7 +6,7 @@ import data from "../../data/api";
 const Features = () => {
     return (
         <>
-            <section className='features top' id="reatures">
+            <section className='features top' id="features">
                 <div className="container">
                     <div className="heading">
                         <h4>Features</h4>
@@ -15,7 +15,7 @@ const Features = () => {
                 </div>
                 <div className="container grid">
                     {data.map((dt, index)=>{
-                        return <Card icon={dt.icon} title={dt.title} content={dt.content} />
+                        return <Card key={index} icon={dt.icon} title={dt.title} content={dt.content} />
                     })}
                 </div>
             </section>
